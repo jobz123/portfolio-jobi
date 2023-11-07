@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProfileService } from '../profile.service';
+import { ProfileService } from '../service/profile.service';
 
 @Component({
   selector: 'app-extra-ciricular',
@@ -7,9 +7,9 @@ import { ProfileService } from '../profile.service';
   styleUrls: ['./extra-ciricular.component.scss']
 })
 export class ExtraCiricularComponent implements OnInit {
-  extras: any
+  extras: any = [];
   constructor(private profileService: ProfileService) { }
   ngOnInit() {
-    this.extras = this.profileService.extraCircular()
+    this.extras = this.profileService.extraCircularInfo;
   }
 }

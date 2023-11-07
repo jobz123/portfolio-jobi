@@ -1,30 +1,33 @@
 <div class="section" id="education">
     <div class="container cc-education">
       <div class="h4 text-center mb-4 title">Education</div>
-      <div class="card">
+      <div class="card" *ngFor="let item of arrEducation">
         <div class="row">
           <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
             <div class="card-body cc-education-header">
-              <p>2015 - 2019</p>
-              <div class="h5">Bachelor's Degree</div>
+              <p>{{item.from_to_year}}</p>
+              <div class="h5">{{item.education}}</div>
             </div>
           </div>
           <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
             <div class="card-body">
-              <div class="h5">Bachelor of Engineering</div>
-               <h4 class="category">Aditya Silver Oak Institute Of Technology
+              <div class="h5">{{item.stream}}</div>
+               <h4 class="category">{{item.institution}}
                </h4>
                <ul>
-                <li> Aditya Silver Oak Institute is GTU Affiliated and <b>ranks 7th</b> in Gujurat </li>
-                    <li>Completed B.E in Computer Engineering with <b>9.54 CGPA</b>.</li>
-                 <li>Won the <b>Best Student Award</b> 3 times for excellent Academic records at College.</li>
-                 <li>Maintained above <b>9.1 spi</b> in every semester of college academic .</li>
+                <li *ngFor="let work of item.info | split">
+                {{work}}  
+                </li>
              </ul>
+             <label>Official website: </label>
+             <a href="{{item.website}}">
+              {{item.website}}
+             </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="card">
+      <!-- <div class="card">
         <div class="row">
           <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
             <div class="card-body cc-education-header">
@@ -51,8 +54,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
+      </div> -->
+      <!-- <div class="card">
         <div class="row">
           <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
             <div class="card-body cc-education-header">
@@ -76,6 +79,6 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
