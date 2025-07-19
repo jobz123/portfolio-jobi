@@ -12,6 +12,7 @@ export class ProfileComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log('Profile component initialized');
     // this.spinner.show();
     // setTimeout(() => {
     //     this.spinner.hide();

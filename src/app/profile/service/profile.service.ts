@@ -181,49 +181,27 @@ export class ProfileService {
     },
 
   ]
-  about2 = `Software Developer with 5+ years of experience .
-  Expertise in Angular 2+ All versions, Javascript and UI with Responsive Designs`
+  about2 = `Senior Software Engineer (L3) with 7+ years of experience in front-end development .
+  Specialized in Angular (v2+), JavaScript, and responsive UI/UX implementation`
 
-  about = "Lover of innovation and everything related to generate new knowledge.Face problems with a smile and solve them as soon as possible. Very calculated about the time I spend and work I do."
+  about = "Passionate about innovation and solving complex problems through clean and scalable code. I enjoy mentoring, leading development teams, and constantly learning new technologies. I approach every challenge with a positive mindset and a sharp focus on delivering high-quality results."
   resumeurl = "https://docs.google.com/document/d/1WODFuhIzQw2AXPsjt6f3rs-EDWhdhT8s89fOTrGRh70/edit?usp=sharing"
 
   skillsData: any = [
-    {
-      'id': '1',
-      'skill': 'Angular Framework',
-      'progress': '85%'
-    },
-    {
-      'id': '2',
-      'skill': 'TypeScript',
-      'progress': '80%'
-    },
-    {
-      'id': '3',
-      'skill': 'Html/Css',
-      'progress': '80%'
-    },
-    {
-      'id': '4',
-      'skill': 'API Integration',
-      'progress': '75%'
-    },
-    {
-      'id': '5',
-      'skill': 'RxJS',
-      'progress': '75%'
-    },
-    {
-      'id': '6',
-      'skill': 'Unit Testing',
-      'progress': '70%'
-    },
-    {
-      'id': '6',
-      'skill': 'Responsive Design',
-      'progress': '70%'
-    }
-  ];
+  { id: '1', skill: 'Angular (v2+)', progress: '90%' },
+  { id: '2', skill: 'TypeScript & JavaScript', progress: '85%' },
+  { id: '3', skill: 'HTML5 / CSS3 / SCSS', progress: '85%' },
+  { id: '4', skill: 'API Integration & RESTful Services', progress: '80%' },
+  { id: '5', skill: 'RxJS & Reactive Forms', progress: '80%' },
+  { id: '6', skill: 'Responsive UI Design', progress: '80%' },
+  { id: '7', skill: 'Unit Testing (Jasmine, Karma)', progress: '75%' },
+  { id: '8', skill: 'Version Control (Git, GitHub)', progress: '85%' },
+  { id: '9', skill: 'Release Planning & Deployment', progress: '90%' },
+  { id: '10', skill: 'Sprint Estimation & Task Allocation', progress: '90%' },
+  { id: '11', skill: 'Team Mentoring & Code Reviews', progress: '90%' },
+  { id: '12', skill: 'Technical Decision Making / POCs', progress: '90%' }
+];
+
 
 
   educationData: any = [
@@ -257,15 +235,27 @@ export class ProfileService {
   ];
   exprienceData: any = [
     {
+      id: 3,
+      company: 'Zerone Consulting Pvt Ltd',
+      location: 'Ernakulam - Infopark',
+      timeline: 'Dec 2024 to Present',
+      role: 'Senior Software Engineer - L3',
+      logo:'assets/images/Zerone-Consulting-logo-profile.jpg',
+      logourl:'https://www.zerone-consulting.com/assets/img/logo-tagline-white.svg',
+      website:'https://www.zerone-consulting.com/',
+      work: 'Led front-end architecture using Angular, enabling scalable UI for a B2B e-commerce solution. Implemented release pipelines, estimations, and mentored 8+ team members.'
+
+    },
+    {
       id: 2,
       company: 'Faya',
       location: 'Trivandrum - Technopark',
-      timeline: 'Sept 2022 to Present',
+      timeline: 'Sept 2022 to Dec 2024',
       role: 'Angular Developer',
       logo:'assets/images/faya-logo.jpg',
       logourl:'https://fayausa.com/wp-content/themes/faya/assets/img/faya.png',
       website:'https://fayausa.com/',
-      work: 'Working as a Angular developer .Responsible for handling the frontend and Managing the api calls in python.'
+      work: 'Developed a content management system with Angular, integrating dynamic meta handling and structured data for SEO. Resulted in improved search visibility and performance.'
 
     },
     {
@@ -275,8 +265,7 @@ export class ProfileService {
       timeline: 'Oct 2016 - Sept 2022',
       role: 'Software Developer',
       website:'https://codework-solutions.com/',
-      work: `Technologies : Angular , C#.
-      Working as a Angular developer .Responsible for handling the frontend and Managing the api calls in C#.`
+      work: `Built Angular-based dashboards for enterprise clients with real-time data integration and modular widgets. Enhanced user interaction and reduced reporting time.`
     },
 
 

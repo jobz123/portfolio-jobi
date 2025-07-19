@@ -16,11 +16,10 @@
 
                                 <div class="timeline-label">
                                     <h2><img *ngIf="exp.logourl" src="{{exp.logourl}}">
-                                        <b *ngIf="!exp.logourl">{{exp.company}}</b><span>- &nbsp;{{exp.timeline}},
+                                        <b *ngIf="!exp.logourl">{{exp.company}}</b><span style="position: absolute;top:25px">- &nbsp;{{exp.timeline}},
                                             {{exp.location}}</span>
                                     </h2>
                                     <h4> {{exp.role}}</h4>
-
                                     <ul>
                                         <li *ngFor="let work of exp.work | split">{{work}}</li>
                                     </ul>
